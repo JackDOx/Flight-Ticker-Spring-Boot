@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking Successful</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            color: #5490ff;
+        }
+        p {
+            font-size: 16px;
+            line-height: 1.5;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            background: #fff;
+            margin: 5px 0;
+            padding: 10px;
+            border: 1px solid #ddd;
+        }
+        a {
+            color: #4CAF50;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+<h1>Booking Success</h1>
+<p>Dear {{userName}},</p>
+<p>We are pleased to inform you that your booking for the flight has been successfully processed.</p>
+<p><strong>Flight Details:</strong></p>
+<ul>
+    <li>Ticket id: {{ticketId}}</li>
+    <li>Flight code: {{flightCode}}</li>
+    <li>Seat: {{seatNumber}}</li>
+    <li>Flight class: {{flightClass}}</li>
+    <li>Departure: {{departure}}</li>
+    <li>Arrival: {{arrival}}</li>
+    <li>Date: {{flightDate}}</li>
+</ul>
+<p>Thank you for choosing our service. We wish you a pleasant journey!</p>
+<p>Best regards,</p>
+<p>The Airline Team</p>
+</body>
+</html>
